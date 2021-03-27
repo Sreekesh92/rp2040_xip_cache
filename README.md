@@ -13,11 +13,11 @@ program execution slows down.
 A Flash memory of maximum 16 MB (requires 24-bit addess lines) is supported by the XIP hardware.
 The XIP hardware maps the Flash memory into the following address ranges :
 
-• 0x10... XIP access, cacheable, allocating - Normal cache operation.
-• 0x11... XIP access, cacheable, non-allocating - Check for hit, don’t update cache on miss.
-• 0x12... XIP access, non-cacheable, allocating - Don’t check for hit, always update cache.
-• 0x13... XIP access, non-cacheable, non-allocating - Bypass cache completely.
-• 0x15... Use XIP cache as SRAM bank, mirrored across entire segment.
+- 0x10... XIP access, cacheable, allocating - Normal cache operation.
+- 0x11... XIP access, cacheable, non-allocating - Check for hit, don’t update cache on miss.
+- 0x12... XIP access, non-cacheable, allocating - Don’t check for hit, always update cache.
+- 0x13... XIP access, non-cacheable, non-allocating - Bypass cache completely.
+- 0x15... Use XIP cache as SRAM bank, mirrored across entire segment.
 
 (Refer Section 2.6.3.1 of RP2040 Datasheet)
 
